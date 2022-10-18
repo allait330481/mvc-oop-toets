@@ -8,7 +8,7 @@
       <th>Vermogen</th>
       <th>Leeftijd</th>
       <th>Bedrijf</th>
-      <th>Delet</th>
+      <th>Delete</th>
     </tr>
   </thead>
   <tbody>
