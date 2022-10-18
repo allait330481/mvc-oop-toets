@@ -12,6 +12,6 @@
     </tr>
   </thead>
   <tbody>
-    <?= $data["richestPeople"]; ?>
+    <?= $data["richestPeoples"]; ?>
   </tbody>
 </table>
