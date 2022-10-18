@@ -4,7 +4,7 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Naam</th>
       <th>Vermogen</th>
       <th>Leeftijd</th>
       <th>Bedrijf</th>
