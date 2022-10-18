@@ -8,15 +8,18 @@ class Richest extends Controller
     $this->peopleModel = $this->model('RichestPeople');
   }
 
+
+
   public function delete($id)
   {
-    $this->peopleModel->deleteRichestPerson($id);
+    $result = $this->peopleModel->deleteRichestPerson($id);
 
-    $data = [
-      'title' => "Delete",
-      'status' => "Delete succesfull"
-    ];
-
-    $this->view('homepages/delete', $data);
+    if ($result) {
+      echo "Het record is verwijderd uit de database";
+      header("Refresh: 3; URL=" . URLROOT . "/homepages/index");
+    } else {
+      echo "Internal servererror, het record is niet verwijderd";
+      header("Refresh: 3; URL=" . URLROOT . "/homepages/index");
+    }
   }
 }
